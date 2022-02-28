@@ -32,26 +32,13 @@ All these words start with b, except for “carrot”.
 
 
 def prefix_words(prefix, words):
-    output = []
-    for word in words:
-       flag = True
-       for i in range(len(prefix)):
-          if word[i] != prefix[i]:
-              flag = False
-       if (flag == True):
-           output.append(word)    
-    return output    
-
-class TestPrefixWords(unittest.TestCase):
-
-    def test_1(self):
-        self.assertEqual(prefix_words(
-            'de', ['dog', 'deal', 'deer']), ['deal', 'deer'])
-
-    def test_2(self):
-        self.assertEqual(prefix_words(
-            'b', ['banana', 'binary', 'carrot', 'bit', 'boar']), ['banana', 'binary', 'bit', 'boar'])
-
-
-if __name__ == '__main__':
-    unittest.main(verbosity=2)
+   pass
+   l=[]
+   for word in words:
+      flag=True
+      for i in range(len(prefix)):
+         if word[i]!=prefix[i]:
+            flag=False
+      if flag==True:
+         l.append(word)
+   return l
